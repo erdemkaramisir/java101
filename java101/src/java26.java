@@ -21,24 +21,48 @@ public class java26 {
         int select = scanner.nextInt();
         System.out.println(select);
 
-        if (select == 1) {
-            System.out.println(" Toplama :" + (n1 + n2));
-        } else if (select == 2) {
-            System.out.println(" Çıkarma :" + (n1 - n2));
+        switch (select) {
+            case 1:
+                System.out.println(" iki sayının toplamı :" + (n1 + n2));
+                break;
 
-        } else if (select == 3) {
-            System.out.println(" Çarpma :" + (n1 * n2));
+            case 2:
+                System.out.println(" İki sayını farkı :" + (n1 - n2));
+                break;
+            case 3:
+                System.out.println(" iki sayının çarpımı :" + (n1 * n2));
+                break;
+            case 4:
+                if (n2 != 0) {
+                    System.out.println("İki sayını bölümü : " + (n1 / n2));
+                } else {
+                    System.out.println(" Lütfen 0 kulllanmayın !");
+                }
+                break;
 
-        } else if (select == 4) {
-            if (n2 != 0) {
-                System.out.println(" Bölme " + (n1 / n2));
-            } else {
-                System.out.println(" Sıfırdan farklı bir sayı giriniz!");
-            }
-
-        } else {
-            System.out.println(" Geçersiz bir işlem yaptınız ");
+            default:
+                System.out.println(" Geçersiz bir işlem yaptınız ");
+                break;
         }
+
+        // if (select == 1) {
+        // System.out.println(" Toplama :" + (n1 + n2));
+        // } else if (select == 2) {
+        // System.out.println(" Çıkarma :" + (n1 - n2));
+
+        // } else if (select == 3) {
+        // System.out.println(" Çarpma :" + (n1 * n2));
+
+        // } else if (select == 4) {
+        // if (n2 != 0) {
+        // System.out.println(" Bölme " + (n1 / n2));
+        // } else {
+        // System.out.println(" Sıfırdan farklı bir sayı giriniz!");
+        // }
+
+        // } else {
+        // System.out.println(" Geçersiz bir işlem yaptınız ");
+        // }
 
     }
 }
