@@ -1,3 +1,4 @@
+package donguler;
 import java.util.Scanner;
 
 public class Java38 {
