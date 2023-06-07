@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Java47 {
     public static void main(String[] args) {
+        
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Bir sayı giriniz:");
