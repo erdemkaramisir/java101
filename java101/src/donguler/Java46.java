@@ -6,6 +6,7 @@ public class Java46 {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
+        
 
         boolean loggedIn = false;
         String kullaniciAdi;
